@@ -1,8 +1,7 @@
 This is a test
 
-'''
-mermaid
+```mermaid
 
 A -->B;
 B--> D;
-'''
+```
