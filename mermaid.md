@@ -1,7 +1,4 @@
-<h1 id="sample-mermaid-graph">Sample Mermaid Graph</h1>
-
-<pre class="mermaid">            
-{
+```mermaid
 flowchart RL 
 YouTube(YouTube) --- Video_Compression(Video Compression) 
 VPN(VPN) --- Tailscale(Tailscale) 
@@ -50,8 +47,7 @@ Google_Photos(Google Photos) --- Google(Google)
 Google_Photos(Google Photos) --- Camera(Camera) 
 Google_Keep(Google Keep) --- Google(Google) 
 Google_Drive(Google Drive) --- Google(Google)
-}        
-</pre>        
+```     
 <script type="module">            
 import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';            
 mermaid.initialize({{ startOnLoad: true }});        
