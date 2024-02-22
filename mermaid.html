@@ -1,0 +1,58 @@
+<h1 id="sample-mermaid-graph">Sample Mermaid Graph</h1>
+
+<pre class="mermaid">            
+{
+flowchart RL 
+YouTube(YouTube) --- Video_Compression(Video Compression) 
+VPN(VPN) --- Tailscale(Tailscale) 
+VPN(VPN) --- Proton_VPN(Proton VPN) 
+VPN(VPN) --- Privacy(Privacy) 
+Video_Transcoding(Video Transcoding) --- Video_Compression(Video Compression) 
+Video_Transcoding(Video Transcoding) --- Jellyfin(Jellyfin) 
+Video_Editing(Video Editing) --- Video_Compression(Video Compression) 
+Video_Editing(Video Editing) --- ProRes(ProRes) 
+Video_Compression(Video Compression) --- Camera(Camera) 
+Video_Compression(Video Compression) --- Netflix(Netflix) 
+Video_Compression(Video Compression) --- Instagram(Instagram) 
+Video_Compression(Video Compression) --- Video_Codecs(Video Codecs) 
+Video_Codecs(Video Codecs) --- H265(H265) 
+Video_Codecs(Video Codecs) --- H264(H264) 
+Video_Codecs(Video Codecs) --- AV1(AV1) 
+Video_Codecs(Video Codecs) --- ProRes(ProRes) 
+TOR(TOR) --- Privacy(Privacy) 
+Tailscale(Tailscale) --- Server(Server) 
+Tailscale(Tailscale) --- Jellyfin(Jellyfin) 
+Syncthing(Syncthing) --- Syncing(Syncing) 
+Syncing(Syncing) --- Google_Drive(Google Drive) 
+Syncing(Syncing) --- Laptop(Laptop) 
+Streamlit(Streamlit) --- Notion_API(Notion API) 
+Streamlit(Streamlit) --- Mermaid(Mermaid) 
+Smart_Phone(Smart Phone) --- Camera(Camera) 
+Smart_Phone(Smart Phone) --- Proton_VPN(Proton VPN) 
+Server(Server) --- Obsidian(Obsidian) 
+Server(Server) --- Jellyfin(Jellyfin) 
+Privacy(Privacy) --- Hacking(Hacking) 
+Photo_Storage(Photo Storage) --- Google_Keep(Google Keep) 
+Photo_Storage(Photo Storage) --- Google_Photos(Google Photos) 
+OnePlus_TV(OnePlus TV) --- Jellyfin(Jellyfin) 
+OnePlus_TV(OnePlus TV) --- Google_Photos(Google Photos) 
+Obsidian(Obsidian) --- Google_Drive(Google Drive) 
+Obsidian(Obsidian) --- Notion(Notion) 
+Notion_API(Notion API) --- Notion(Notion) 
+Notion(Notion) --- Google_Keep(Google Keep) 
+Notion(Notion) --- Mermaid(Mermaid) 
+Mr_Robot(Mr Robot) --- Hacking(Hacking) 
+Money_Tracking(Money Tracking) --- Cashew(Cashew) 
+Laptop(Laptop) --- Jellyfin(Jellyfin) 
+Jellyfin(Jellyfin) --- Google_Photos(Google Photos) 
+Google_Sheets(Google Sheets) --- Google(Google) 
+Google_Photos(Google Photos) --- Google(Google) 
+Google_Photos(Google Photos) --- Camera(Camera) 
+Google_Keep(Google Keep) --- Google(Google) 
+Google_Drive(Google Drive) --- Google(Google)
+}        
+</pre>        
+<script type="module">            
+import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';            
+mermaid.initialize({{ startOnLoad: true }});        
+</script>
